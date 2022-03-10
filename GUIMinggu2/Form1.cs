@@ -16,5 +16,22 @@ namespace GUIMinggu2
         {
             InitializeComponent();
         }
+
+        private void button1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (this.checkBox1.Checked)
+            {
+                this.label1.Text = "Halo " + this.textBox1.Text;
+            }
+            else
+            {
+                this.label1.Text = "Halo Semua";
+            }
+        }
+
+        private void checkBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.textBox1.Enabled = this.checkBox1.Checked;
+        }
     }
 }
